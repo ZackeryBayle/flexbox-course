@@ -78,10 +78,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Merriweather', serif;
 }
 .content-wrapper h1 {
-    font-family: 'Merriweather', serif;
+    margin-bottom: 1px;
+    font-size: 2.0em;
+    color:lightslategray;
 }
-.content-wrapper sub {
-    font-family: 'Merriweather', serif;
+.content-wrapper > .header sub {
+    font-weight: 900;
+    font-size: 1.2em;
+    color:lightslategray;
 }
