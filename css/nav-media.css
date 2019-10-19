@@ -1,0 +1,62 @@
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (max-device-width : 600px) {
+/* Styles */
+body{
+    margin:0px;
+    padding:0px;
+}
+.nav-container {
+    display: flex;
+    background-color: white;
+    width:100%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin-bottom:70px;
+}
+.nav-container > .nav-menu-wrapper > .nav-links-wrapper {
+    display:flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+.nav-container > .nav-menu-wrapper > .nav-links-wrapper > .query-nav i {
+
+    visibility: visible;
+    background-color:#05386B;
+    border:3px solid #05386B;
+    border-top-right-radius: 3px;
+    color:white;
+    padding:3px 8px;
+}
+.nav-container > .nav-menu-wrapper > .nav-links-wrapper > .link {
+
+    visibility: hidden;
+    background-color:#05386B;
+    border:3px solid #05386B;
+    border-top-right-radius: 3px;
+    color:white;
+    padding:2px 8px;
+    margin-left:1px;
+    margin-right:1px;
+}
+.nav-container > .nav-menu-wrapper > .nav-links-wrapper > .right-link {
+    margin-left:1px;
+    margin-right:1px;
+}
+
+.nav-container > .nav-menu-wrapper {
+
+    display: flex;
+    width:100%;
+    justify-content: flex-start;
+}
+#toggle:checked + .link {
+    visibility:visible;
+}
+
+
+
+
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://kit.fontawesome.com/e1adbad1cf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/nav.css"> -->
+    <link rel="stylesheet" href="./css/nav-test.css">
+    <link rel="stylesheet" href="./css/nav-media.css">
+    <title>CapStone Project - Navigation</title>
+</head>
+
+<body>
+    <div class="nav-container">
+        <div class="nav-logo"><img src="./img/demologo.png" alt="Nav Logo"></div>
+        <div class="nav-menu-wrapper">
+            <div class="nav-links-wrapper">
+                <a href="#" class="link"><i class="fab fa-html5"></i></a>
+                <a href="#" class="link"><i class="fab fa-css3-alt"></i></a>
+
+                <a href="#" class="link right-link"> <i class="fas fa-box-open"></i></a>
+                <div class="query-nav">
+                    <!-- Mobile Menu NAvigation -->
+                    <label for="toggle"><i class="fas fa-bars"></i></label>
+                    <input type="checkbox" id="toggle">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <h1>CapStone Project Navigation Bar</h1>
+        <sub>using flex-box</sub>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#toggle').change(function () {
+                if (this.checked)
+                    $('.link').css('visibility', 'visible');
+                else
+                    $('.link').css('visibility', 'hidden');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

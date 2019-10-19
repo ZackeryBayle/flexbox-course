@@ -1,0 +1,23 @@
+body{
+    margin:0;
+    padding:0;
+}
+.container {
+    margin:0;
+    height: calc(100vh - 20px);
+    width: calc(100vw - 20px);
+    border:2px solid red;
+    display: flex;
+}
+img {
+    margin:10px;
+    height:70px;
+    width:120px;
+}
+.img1 {
+    align-self: flex-start;
+}
+.img1:active {
+    align-self: center;
+    transition: 1.5s;
+}
