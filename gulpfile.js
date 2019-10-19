@@ -10,4 +10,5 @@ gulp.task('serve', function() {
   });
 
   gulp.watch("*.html").on("change", reload);
+  gulp.watch("*.css").on("change", reload);
 });
